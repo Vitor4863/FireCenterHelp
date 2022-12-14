@@ -4,7 +4,6 @@ USE db_help;
 CREATE TABLE tb_usuario(
 	id INT PRIMARY KEY AUTO_INCREMENT,
   	nome VARCHAR(40) NOT NULL,
-	email VARCHAR(40) NOT NULL,
   	dataNascimento VARCHAR(40) NOT NULL,
   	telefone VARCHAR(40) NOT NULL,
   	cpf VARCHAR(40) NOT NULL,
@@ -19,7 +18,8 @@ CREATE TABLE tb_usuario(
 CREATE TABLE tb_contaUsuario(
 id INT PRIMARY KEY AUTO_INCREMENT,
 email varchar(55)NOT NULL,
-senha varchar(55)NOT NULL
+senha varchar(55)NOT NULL,
+nome varchar(55) NOT NULL
 );
 
 drop database db_help;
