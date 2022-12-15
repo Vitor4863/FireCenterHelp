@@ -28,7 +28,7 @@
     </tr>
 </table>
 
-<img src="img/Mobile.PNG" width="100%">
+<img src="img/Capturar13.PNG" width="100%">
 
 <table border="1">
     <h2>Tecnologias utilizadas<h2>
