@@ -30,10 +30,7 @@
 
 <table border="1">
     <caption>Exemplo de Título</caption>
-     <tr>
-        <th>Tecnologias </th>
-       
-    </tr>
+     
     <tr>
         <td>Java</td>
         <td>Mysql</td>
