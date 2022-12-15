@@ -1,7 +1,7 @@
 
 <h1 align="center">FireCenterHelp </h1>
 
-
+<img src="img/Capturar13.PNG" width="100%">
 
 <table border="1">
 <br>
@@ -28,7 +28,7 @@
     </tr>
 </table>
 
-<img src="img/Capturar13.PNG" width="100%">
+
 
 <table border="1">
     <h2>Tecnologias utilizadas<h2>
