@@ -31,8 +31,8 @@
 <table border="1">
     <caption>Exemplo de Título</caption>
     <tr>
-        <th>Java</th>
-        <th>MySQL</th>
+        <td>Java</td>
+        <td>MySQL</td>
     </tr>
     <tr>
         <td>HTML</td>
