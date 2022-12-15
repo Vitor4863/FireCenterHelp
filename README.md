@@ -2,7 +2,7 @@
 <h1 align="center">FireCenterHelp </h1>
 
 
-<img src=".gitHub/Mobile.PNG">
+<img src=".gitHub/Capturar13.PNG">;
 
 <table border="1">
 <br>
