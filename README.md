@@ -24,7 +24,7 @@
     <tr>
         <td>Nicolas</td>
         <td>26</td>
-        <td>scrum master</td>
+        <td>Scrum master</td>
     </tr>
 </table>
 
