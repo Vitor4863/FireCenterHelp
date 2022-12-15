@@ -5,7 +5,7 @@
 
 <table border="1">
 <br>
-<h1>Equipe Do Projeto<h1>
+<h2>Equipe Do Projeto<h2>
     <tr>
         <td>Nome</td>
         <td>Idade</td>
@@ -29,7 +29,7 @@
 </table>
 
 <table border="1">
-    <h1>Tecnologias utilizadas<h1>
+    <h2>Tecnologias utilizadas<h2>
     <tr>
         <td>Java</td>
         <td>MySQL</td>
