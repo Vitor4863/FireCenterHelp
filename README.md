@@ -29,9 +29,28 @@
 </table>
 
 <table border="1">
-   <tr>
-       <th>Tecnologias:</th>
-       <td>Java</td>
-      
-   </tr>
+    <tr>
+        <th>Tecnologias</th>
+        
+    </tr>
+    <tr>
+        <td>Java</td>
+        
+    </tr>
+    <tr>
+        <td>MySQL</td>
+        
+    </tr>
+     <tr>
+        <td>CSS</td>
+        
+    </tr>
+     <tr>
+        <td>Java-Script</td>
+        
+    </tr>
+     <tr>
+        <td>Ionic</td>
+        
+    </tr>
 </table>
