@@ -29,28 +29,33 @@
 </table>
 
 <table border="1">
+    <caption>Exemplo de Título</caption>
     <tr>
-        <th>Tecnologias</th>
-        
+        <th>Nome</th>
+        <th>Sobrenome</th>
     </tr>
     <tr>
         <td>Java</td>
-        
+        <td>Junior</td>
     </tr>
     <tr>
         <td>MySQL</td>
-        
+        <td>Neto</td>
     </tr>
-     <tr>
+    <tr>
         <td>CSS</td>
-        
+        <td>Neto</td>
     </tr>
-     <tr>
-        <td>Java-Script</td>
-        
+    <tr>
+        <td>HTML</td>
+        <td>Neto</td>
     </tr>
-     <tr>
+    <tr>
         <td>Ionic</td>
-        
+        <td>Neto</td>
+    </tr>
+    <tr>
+        <td>Java-Script</td>
+        <td>Neto</td>
     </tr>
 </table>
