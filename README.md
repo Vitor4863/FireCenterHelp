@@ -35,11 +35,11 @@
         <th>MySQL</th>
     </tr>
     <tr>
-        <td>Ted</td>
-        <td>Junior</td>
+        <td>HTML</td>
+        <td>CSS</td>
     </tr>
     <tr>
-        <td>Ted</td>
-        <td>Neto</td>
+        <td>JavaScript</td>
+        <td>Ionic</td>
     </tr>
 </table>
