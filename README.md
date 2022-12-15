@@ -1,11 +1,8 @@
 
 <h1 align="center">FireCenterHelp </h1>
 
-<<<<<<< HEAD
-<img src=".gitHub/Mobile.png"> 
-=======
- <img="mobile.png"
->>>>>>> 175bd75fda2259769bd5404e1e6cf10885718bc4
+
+<img src=".gitHub/Mobile.png">;
 
 <table border="1">
 <br>
