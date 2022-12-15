@@ -28,7 +28,7 @@
     </tr>
 </table>
 
-<img src=".gitHub/Capturar13.PNG">
+<img src="img/Mobile.PNG" width="100%">
 
 <table border="1">
     <h2>Tecnologias utilizadas<h2>
