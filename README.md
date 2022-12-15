@@ -30,17 +30,16 @@
 
 <table border="1">
     <caption>Exemplo de Título</caption>
-     
     <tr>
-        <td>Java</td>
-        <td>Mysql</td>
+        <th>Java</th>
+        <th>MySQL</th>
     </tr>
     <tr>
-        <td>Ionic</td>
-        <td>CSS</td>
+        <td>Ted</td>
+        <td>Junior</td>
     </tr>
     <tr>
-        <td>HTML</td>
-        <td>JavaScript</td>
+        <td>Ted</td>
+        <td>Neto</td>
     </tr>
 </table>
