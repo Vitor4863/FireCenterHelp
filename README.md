@@ -2,7 +2,6 @@
 <h1 align="center">FireCenterHelp </h1>
 
 
-<img src=".gitHub/Capturar13.PNG">;
 
 <table border="1">
 <br>
@@ -28,6 +27,8 @@
         <td>Scrum master</td>
     </tr>
 </table>
+
+<img src=".gitHub/Capturar13.PNG">
 
 <table border="1">
     <h2>Tecnologias utilizadas<h2>
