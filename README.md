@@ -29,7 +29,7 @@
 </table>
 
 <table border="1">
-    <caption>Tecnologias utilizadas</caption>
+    <h1>Tecnologias utilizadas<h1>
     <tr>
         <td>Java</td>
         <td>MySQL</td>
