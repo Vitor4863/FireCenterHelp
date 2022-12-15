@@ -30,32 +30,20 @@
 
 <table border="1">
     <caption>Exemplo de Título</caption>
-    <tr>
-        <th>Nome</th>
-        
+     <tr>
+        <th>Tecnologias </th>
+       
     </tr>
     <tr>
         <td>Java</td>
-       
-    </tr>
-    <tr>
-        <td>MySQL</td>
-       
-    </tr>
-    <tr>
-        <td>CSS</td>
-        
-    </tr>
-    <tr>
-        <td>HTML</td>
-      
+        <td>Mysql</td>
     </tr>
     <tr>
         <td>Ionic</td>
-       
+        <td>CSS</td>
     </tr>
     <tr>
-        <td>Java-Script</td>
-       
+        <td>HTML</td>
+        <td>JavaScript</td>
     </tr>
 </table>
