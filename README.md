@@ -32,9 +32,6 @@
    <tr>
        <th>Tecnologias:</th>
        <td>Java</td>
-       td>MySQL</td>
-       td>HTML</td>
-       td>CSS</td>
-       td>Ionic</td>
+      
    </tr>
 </table>
