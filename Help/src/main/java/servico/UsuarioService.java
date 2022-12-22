@@ -1,10 +1,10 @@
 package servico;
 
-import dao.UsuarioDAO;
+import dao.ContaUsuarioDAO;
 import modelo.ContaUsuario;
 
 public class UsuarioService {
-	UsuarioDAO contausuario = new UsuarioDAO();
+	ContaUsuarioDAO contausuario = new ContaUsuarioDAO();
 
 	public ContaUsuario buscarPorId(int id) {
 		return contausuario.buscarPorId(id);
@@ -23,7 +23,7 @@ int idUsuario;
 		return contausuario.excluirUsuario(idUsuario);
   }
 	public boolean incluirCategoria(ContaUsuario contausuario) {
-		UsuarioDAO dao = new UsuarioDAO();
+		ContaUsuarioDAO dao = new ContaUsuarioDAO();
 		
 		return dao.incluir(contausuario);
 	}
