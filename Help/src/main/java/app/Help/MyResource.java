@@ -3,7 +3,11 @@ package app.Help;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import modelo.ContaUsuario;
+import servico.UsuarioService;
 
 /**
  * Root resource (exposed at "myresource" path)
@@ -22,4 +26,15 @@ public class MyResource {
     public String getIt() {
         return "Got it!";
     }
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("buscarUsuario")
+    public Response buscarusuario(@QueryParam("id")int id) {
+    	UsuarioService servico = new UsuarioService();
+    	ContaUsuario usuario = servico.buscarPorId(id);
+    	Response response = Response.ok().entity(usuario).build();
+		return response;
+    
+    }
+   
 }

@@ -97,6 +97,7 @@ public class ContaUsuarioDAO {
 		
 		return contaUsuario;
 	}
+	
 	public boolean incluir(ContaUsuario contaUsuario) {
 		boolean retorno = true;
 		int retornoQuery;
