@@ -19,7 +19,7 @@ public class UsuarioService {
 	}
 	
 	public boolean  excluirUsuario(String id) {
-int idUsuario;
+         int idUsuario;
 		
 		idUsuario = Integer.parseInt(id);
 		
