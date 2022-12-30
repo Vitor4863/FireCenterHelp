@@ -10,12 +10,8 @@ import modelo.Usuario;
 
 public class UsuarioDAO {
 
-	public class CategoriaDAO {
-		
-		
-		
-	}
-	public boolean alterarUsuario (Usuario  usuario) {
+	
+	public boolean alterar (Usuario  usuario) {
 		boolean resultado = true;
 		int retornoQuery;
 		

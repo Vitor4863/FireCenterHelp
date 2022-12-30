@@ -1,30 +1,34 @@
 package servico;
 
-import dao.ContaUsuarioDAO;
-import modelo.ContaUsuario;
+
+
+import dao.UsuarioDAO;
+
+import modelo.Usuario;
 
 public class UsuarioService {
-	ContaUsuarioDAO contausuario = new ContaUsuarioDAO();
-
-	public ContaUsuario buscarPorId(int id) {
-		return contausuario.buscarPorId(id);
-	}
+	UsuarioDAO usuario = new UsuarioDAO();
 	
-	public boolean alterar(ContaUsuario contausario) {
-		return contausuario.alterarUsuario(contausario);
+	public boolean alterar(Usuario usr) {
+		return usuario.alterar(usr);
 	}
 
+
+	public Usuario buscarPorId(int id) {
+		return usuario.buscarPorId(id);
+	}
 	
-	public boolean  excluir(String id) {
+	public boolean  excluirUsuario(String id) {
 int idUsuario;
 		
 		idUsuario = Integer.parseInt(id);
 		
-		return contausuario.excluirUsuario(idUsuario);
+		return usuario.excluirUsuario(idUsuario);
   }
-	public boolean incluirCategoria(ContaUsuario contausuario) {
-		ContaUsuarioDAO dao = new ContaUsuarioDAO();
+	public boolean incluir(Usuario usuario) {
+		UsuarioDAO dao = new UsuarioDAO();
 		
-		return dao.incluir(contausuario);
+		return dao.incluir(usuario);
 	}
+	
 }

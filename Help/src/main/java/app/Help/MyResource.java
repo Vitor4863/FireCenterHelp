@@ -7,7 +7,7 @@ import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import modelo.ContaUsuario;
-import servico.UsuarioService;
+import servico.ContaUsuarioService;
 
 /**
  * Root resource (exposed at "myresource" path)
@@ -30,7 +30,7 @@ public class MyResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Path("buscarUsuario")
     public Response buscarusuario(@QueryParam("id")int id) {
-    	UsuarioService servico = new UsuarioService();
+    	ContaUsuarioService servico = new ContaUsuarioService();
     	ContaUsuario usuario = servico.buscarPorId(id);
     	Response response = Response.ok().entity(usuario).build();
 		return response;
