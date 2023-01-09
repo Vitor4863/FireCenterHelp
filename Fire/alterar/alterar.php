@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Criar conta</title>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			<form action="../dao/alt_senha.php"  method="Post">
+				<h1>Alterar Conta</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="text" placeholder="usuario" required/>
+				<input type="password" name="senha" placeholder="Password" required/>
+                <button type="submit" name="btn" value="Acessar">Alterar</button>      
+				<a href="../Login/login.php">Voltar</a>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+                     <img src="img/0eded855366105ec4e4304465d098e48-removebg-preview.png" alt="" width="400px">
+					<h1</h1>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
