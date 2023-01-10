@@ -46,8 +46,8 @@ include_once "../dao/conexao.php";
                 echo "alergia: " . $row_usuario['alergia'] . "<br>";
                 echo "sangue: " . $row_usuario['sangue'] . "<br>";
                 echo "pcd: " . $row_usuario['pcd'] . "<br>";
-				echo "<a href='../dao/alt_senha.php?id=" . $row_usuario['id'] . "'>Editar</a><br>";
-				echo "<a href='proc_apagar_usuario.php?id=" . $row_usuario['id'] . "'>Apagar</a><br><hr>";
+				echo "<a href='../alterar/alterar.php?id=" . $row_usuario['id'] . "'>Editar</a><br>";
+				echo "<a href='../dao/apagar.php?id=" . $row_usuario['id'] . "'>Apagar</a><br><hr>";
 			}
 		}
 		?>
