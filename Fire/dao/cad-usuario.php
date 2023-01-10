@@ -48,7 +48,7 @@ if (mysqli_query($conn, $sql)){
 // Encerra a conexão com o banco
 mysqli_close($conn);
 // Cria um alert javascript carrega o conteúdo da variável $msg e redireciona para o index
-echo "<script> location.href='../Visao/visao.php';</script>"
+echo "<script> location.href='../Login/login.php';</script>"
         
 
 

@@ -19,14 +19,14 @@ if($btnLogin){
 				$_SESSION['id'] = $row_usuario['id'];
 				$_SESSION['nome'] = $row_usuario['nome'];
 				$_SESSION['email'] = $row_usuario['email'];
-				header("Location: ../Cadastro/cadastro.php");
+				header("Location: ../Visao/visao.php");
 			}else{
-				$_SESSION['msg'] = "Login e senha incorreto!";
+				$_SESSION['msg'] = "";
 				header("Location: ../Login/login.php");
 			}
 		}
 	}else{
-		$_SESSION['msg'] = "Login e senha incorreto!";
+		$_SESSION['msg'] = "Login e senha incorreto";
 		header("Location: ../Login/login.php");
 	}
 }else{
