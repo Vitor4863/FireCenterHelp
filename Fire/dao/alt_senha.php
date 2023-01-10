@@ -1,24 +1,23 @@
 <?php
+session_start();
+include_once("../dao/conexao.php");
 
+$id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 
-include_once 'conexao.php';
+//echo "Nome: $nome <br>";
+//echo "E-mail: $email <br>";
 
-$usuario = $_POST["usuario"];
-$senha = PASSWORD_HASH($_POST["senha"],PASSWORD_DEFAULT);
+$result_usuario = "UPDATE tb_usuario SET nome='$nome', email='$email', modified=NOW() WHERE id='$id'";
+$resultado_usuario = mysqli_query($conn, $result_usuario);
 
-
-
-$sql = "update usuarios set senha = '$senha' where usuario = '$usuario' ";
-
-if(mysqli_query($conn,$sql)){
-$msg = "alterado com sucesso!";
-
+if(mysqli_affected_rows($conn)){
+	$_SESSION['msg'] = "<p style='color:green;'>Usuário editado com sucesso</p>";
+	header("Location: index.php");
 }else{
-    $msg = "Error ao alterar";
+	$_SESSION['msg'] = "<p style='color:red;'>Usuário não foi editado com sucesso</p>";
+	header("Location: editar.php?id=$id");
 }
-
-mysqli_close($conn);
-echo "<script>alert ('".$msg."');  location.href='../Login/login.php';</script>";
-
 
 ?>

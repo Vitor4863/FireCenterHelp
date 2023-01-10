@@ -60,36 +60,9 @@ if(!empty($_SESSION['id'])){
                     </li>
                     <li class="list-item">
                        <i class="list-item-icon fas fa-book"></i>
-                        <a href="sobre.html"><span class="list-item-text">Sobre</span></a>
+                        <a href="sobre.php"><span class="list-item-text">Sobre</span></a>
                     </li>
-                    <!--<li class="list-item">
-                       <i class="list-item-icon fas fa-stream"></i>
-                        <span class="list-item-text">Sangue: A+</span>
-                    </li>
-                    <li class="list-item">
-                       <i class="list-item-icon fas fa-book"></i>
-                        <span class="list-item-text">sobre</span>
-                    </li>
-                    <li class="list-item">
-                     <i class="list-item-icon fas fa-users"></i>
-                        <span class="list-item-text">Community</span>
-                    </li>
-                    <li class="list-item">
-                      <i class="list-item-icon fas fa-toolbox"></i>
-                        <span class="list-item-text">Tools</span>
-                    </li>
-                    <li class="list-item">
-                      <i class="list-item-icon fas fa-shopping-basket"></i>
-                        <span class="list-item-text">Market</span>
-                    </li>
-                    <li class="list-item">
-                     <i class="list-item-icon far fa-question-circle"></i>
-                        <span class="list-item-text">Documento</span>
-                    </li>-->
-                    <!--<a href="mapa.html"><li class="list-item">
-                        <img src="img/google-maps.png" width="20px">
-                        <span class="list-item-text">Mapa</span>
-                    </li></a>-->
+                  
                 </ul>
             </div>
             <button class="btn fifth">EMERGÊNCIA</button>

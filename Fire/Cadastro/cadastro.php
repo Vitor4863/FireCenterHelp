@@ -9,19 +9,17 @@
 	<div class="container" id="container">
 		<div class="form-container log-in-container">
 			<form action="../dao/cad-usuario.php" method="Post">
-				<h1 id="titulo">Cadastrar</h1>
+				<h1 id="titulo">Prencha seus Dados</h1>
 				<div class="grid">
 					<div><input type="text" placeholder="nome" name="nome" required/></div>
 					<input type="email" placeholder="Email" name="email" required/>
 					<div><input type="date" name="dataNascimento" required/></div>
-					<input type="text" name="usuario" placeholder="Digite o usuario" require maxlength="9">
 					<div><input type="text" placeholder="telefone" name="telefone" required maxlength="9"/></div>
 					<div><input type="text" placeholder="cpf"  name="cpf" required maxlength="11"/></div>
 					<div><input type="text" placeholder="cep" name="cep" required maxlength="8"/></div>
 					<div><input type="text" placeholder="telefone de seguranca" name="numeroSeguranca" required maxlength="9"/></div>
 					<div><input type="text" placeholder="deficiencia" name="deficiencia" required maxlength="90"/></div>
 					<div><input type="text" placeholder="alergia" name="alergia"  required maxlength="90"/></div>
-					<div><input type="password" placeholder="senha" name="senha"   required maxlength="90"/></div>
 					<div><select  name="Sangue"  id="sangue" >
 						<option placeholder="Selecione seu tipo de sanguinio">Tipo de sanguinio</option>
 						<option>A+</option>

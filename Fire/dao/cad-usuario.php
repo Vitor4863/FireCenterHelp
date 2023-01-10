@@ -9,7 +9,6 @@ include_once 'conexao.php';
 
 $nome= $_POST["nome"];
 
-$usuario = $_POST["usuario"];
 //recebe o email
 $email = $_POST["email"];
 // recebe a data
@@ -27,7 +26,6 @@ $deficincia = $_POST["deficiencia"];
 // recebe a alergia
 $alergia = $_POST["alergia"];
 //receba senha
-$senha = PASSWORD_HASH($_POST["senha"], PASSWORD_DEFAULT);
 //recebe tipo-sanguineo
 $sangue = $_POST["Sangue"];
 //recebe pcd 
@@ -36,7 +34,7 @@ $pcd = $_POST["pcd"];
 
 //montar a query sql de gravação recebendo as variaveis via post
 
-$sql = "INSERT INTO tb_usuario values (null,'$nome','$usuario', '$email' ,'$data', '$telefone', '$cpf' , '$cep', '$numeroSeguranca' , '$deficincia' , '$alergia','$senha','$sangue','$pcd')";
+$sql = "INSERT INTO tb_usuario values (null,'$nome', '$email' ,'$data', '$telefone', '$cpf' , '$cep', '$numeroSeguranca' , '$deficincia' , '$alergia','$sangue','$pcd')";
 
 
 //Faz a conexao e executa a instrucao carregada na varivael $sql e os envia para o banco mysql.
@@ -50,7 +48,7 @@ if (mysqli_query($conn, $sql)){
 // Encerra a conexão com o banco
 mysqli_close($conn);
 // Cria um alert javascript carrega o conteúdo da variável $msg e redireciona para o index
-echo "<script> location.href='../Login/login.php';</script>"
+echo "<script> location.href='../Visao/visao.php';</script>"
         
 
 
