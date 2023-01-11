@@ -49,7 +49,7 @@
     </tr>
      <tr>
         <td>PHP</td>
-        <td>TypScript</td>
+        <td>Angula</td>
     </tr>
 </table>
  :construction: Projeto em construção :construction:
