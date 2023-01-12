@@ -62,10 +62,7 @@ session_start();
                          <img src="img/man.png" alt="" width="30px">
                         <span class="list-item-text">Perfil</span>
                     </li></a>
-                    <li class="list-item">
-                        <i class="list-item-icon fas fa-home"></i>
-                        <span class="list-item-text">Home</span>
-                    </li>
+                    
                     <li class="list-item">
                        <i class="list-item-icon fas fa-book"></i>
                         <a href="../visao/sobre.php"><span class="list-item-text">Sobre</span></a>

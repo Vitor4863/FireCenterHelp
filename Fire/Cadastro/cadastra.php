@@ -6,6 +6,7 @@
 	<title>cadastrar</title>
 </head>
 <body>
+	
 	<div class="container" id="container">
 		<div class="form-container log-in-container">
 			<form action="../dao/cad.php" method="Post">

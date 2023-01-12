@@ -13,7 +13,8 @@
         <nav>
            
             <ul class="nav-list">
-                <img src="img/flames.png" alt="" width="40px"><a href="index.html"><span class="brand">FireHelpCenter</span></a>
+               <a href="visao.php"><img src="img/flames.png" alt="" width="40px"></a>
+               <a href="index.html"><span class="brand">FireHelpCenter</span></a>
 
                 <div id="espace"></div>
                 <div class="sidebar-bottom">
