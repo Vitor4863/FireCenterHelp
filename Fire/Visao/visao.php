@@ -1,12 +1,5 @@
 <?php
 session_start();
-if(!empty($_SESSION['id'])){
-	echo "Olá ".$_SESSION['nome'].", Bem vindo <br>";
-	echo "<a href='../Login/login.php'>Sair</a>";
-}else{
-	$_SESSION['msg'] = "Área restrita";
-	header("Location: ../Login/login.php");	
-}
 
 
 ?>
@@ -46,7 +39,22 @@ if(!empty($_SESSION['id'])){
         <div class="sidebar">
             <div class="sidebar-top">
                 <img src="img/flames.png" alt="" width="40px">
-                <span class="brand">FireHelpCenter</span>
+                <span class="brand">FireHelpCenter</span><br>
+                 
+            </div>
+            <div class="sidebar-top">
+            <?php
+                if(!empty($_SESSION['id'])){
+                    echo "Olá ".$_SESSION['nome'].", Bem vindo <br>";
+                    echo "<a href='../Login/login.php'></br></br>Sair</a>";
+                }else{
+                    $_SESSION['msg'] = "Área restrita";
+                    header("Location: ../Login/login.php");	
+                }
+                
+                ?>
+                <span class="brand"></span><br>
+                 
             </div>
             <div class="sidebar-center">
                 <ul class="list">
