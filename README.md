@@ -47,5 +47,9 @@
         <td>JavaScript</td>
         <td>Ionic</td>
     </tr>
+     <tr>
+        <td>PHP</td>
+        <td>Angula</td>
+    </tr>
 </table>
  :construction: Projeto em construção :construction:
