@@ -8,7 +8,7 @@ $senha = PASSWORD_HASH($_POST["senha"],PASSWORD_DEFAULT);
 
 
 
-$sql = "update usuarios set senha = '$senha' where email = '$usuario' ";
+$sql = "update tb_usuario set senha = '$senha' where email = '$usuario' ";
 
 if(mysqli_query($conn,$sql)){
 $msg = "alterado com sucesso!";

@@ -50,7 +50,7 @@ if(!empty($_SESSION['id'])){
             </div>
             <div class="sidebar-center">
                 <ul class="list">
-                   <a href=""><li class="list-item">
+                   <a href="../consulta/perfil.php"><li class="list-item">
                          <img src="img/man.png" alt="" width="30px">
                         <span class="list-item-text">Perfil</span>
                     </li></a>
@@ -60,7 +60,7 @@ if(!empty($_SESSION['id'])){
                     </li>
                     <li class="list-item">
                        <i class="list-item-icon fas fa-book"></i>
-                        <a href="sobre.php"><span class="list-item-text">Sobre</span></a>
+                        <a href="../visao/sobre.php"><span class="list-item-text">Sobre</span></a>
                     </li>
                   
                 </ul>

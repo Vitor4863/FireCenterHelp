@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +13,13 @@
 	<div class="container" id="container">
 		<div class="form-container log-in-container">
 			<form method="POST" action="../valida/valida.php"  >
-			
+
+            <?php
+			if(isset($_SESSION['msg'])){
+				echo $_SESSION['msg'];
+				unset($_SESSION['msg']);
+			}
+		?>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
 					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
@@ -18,7 +28,7 @@
 				<input type="text" name="usuario" placeholder="Digite o seu usuário"><br><br>
 				<input type="password" name="senha" placeholder="Digite a sua senha"><br><br>
 				
-				<a href="cadastroUsuario.php">crie sua conta</a>   
+				<a href="../cadastro/cadastra.php">crie sua conta</a>   
 				<a href="../alterar/alterar.php">Forgot your password?</a> 
                 <button type="submit" name="btnLogin" value="Acessar">Acessar</button>  
 				
