@@ -9,21 +9,21 @@ include_once "../dao/conexao.php";
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous"/>
 	</head>
 	<body>
         
     <div class="tudo">
         <div class="sidebar">
-            <div class="sidebar-top">
+           <a href="../visao/visao.php"><div class="sidebar-top">
                 <img src="img/flames.png" alt="" width="40px">
                 <span class="brand">FireHelpCenter</span><br>
                  
-            </div>
-            <div class="sidebar-top">
+            </div></a>
             
-                <span class="brand"></span><br>
-                 
-            </div>
             <div class="sidebar-center">
                 <ul class="list">
                    <a href="../consulta/perfil.php"><li class="list-item">
@@ -51,8 +51,6 @@ include_once "../dao/conexao.php";
 session_start();
 if(!empty($_SESSION['id'])){
    
-
-    
     echo' <div class="container">'.
     '<div class="profile">'.
         '<img src="" alt="" id="photo">'.
@@ -69,8 +67,8 @@ if(!empty($_SESSION['id'])){
     '</div>'.
     '<div class="profile">'.
         '<div class="profile-info">'.
-            '<h1>Telefone</h1>'.
-            $_SESSION['telefone'].
+            '<h1>Numero de Segurança</h1>'.
+            $_SESSION['numeroSeguranca'].
         '</div>'.
     '</div>'.
     '<div class="profile">'.
@@ -81,7 +79,8 @@ if(!empty($_SESSION['id'])){
     '</div>'.
 
     '<div class="edit">'.
-        '<button class="ph-heartbeat"> Emergência</button>'.
+        '<button class="ph-heartbeat"> Emergência</button> <br><br>'.
+        '<button class="ph-chat-teardrop-dots" ><a href="../cadastro/editar.php"> Editar</a></button>'.
     '</div>'.
 '</div>'.
 
@@ -98,23 +97,15 @@ if(!empty($_SESSION['id'])){
     '</article>'.
     '<article class="defi">'.
         '<h1>Deficiencia</h1>'.
-        $_SESSION['deficiencia'].
+        $_SESSION['pcd'].
     '</article>'.
 '</div>';
 
 
 
-   // echo'<div class="dados">'.'<spam>Email</spam><br>'. $_SESSION['email']."<br>" ."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>Data</spam> <br>'.$_SESSION['dataNascimento']."<br>"."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>Telefone</spam> <br>'.$_SESSION['telefone']."<br>".'<br> </div>';
-    //echo '<div class="dados">'.'<spam>CPF</spam><br>'.$_SESSION['cpf']."<br>"."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>Numero de Segurança</spam> <br>'.$_SESSION['numeroSeguranca']." <br>"."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>Deficiencia</spam> <br>'.$_SESSION['deficiencia']." <br>"."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>Alergia</spam> <br>'.$_SESSION['alergia']." <br>"."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>Sangue</spam> <br>'.$_SESSION['sangue']." <br>"."<br>".'</div>';
-    //echo '<div class="dados">'.'<spam>PCD</spam> <br>'.$_SESSION['pcd']."<br>"."<br>".'</div>';
-
-	
+  
+    //echo ''.$_SESSION['numeroSeguranca'].' ';
+   
 
 }
 ?>
