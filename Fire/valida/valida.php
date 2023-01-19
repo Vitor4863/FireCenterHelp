@@ -28,12 +28,12 @@ if($btnLogin){
                 $_SESSION['pcd'] = $row_usuario['pcd'];
 				header("Location: ../visao/visao.php");
 			}else{
-				$_SESSION['msg'] = "Login e senha incorreto!";
+				$_SESSION['msg'] = "Login ou senha incorreto!";
 				header("Location: ../login/login.php");
 			}
 		}
 	}else{
-		$_SESSION['msg'] = "Login e senha incorreto!";
+		$_SESSION['msg'] = "Login ou senha incorreto!";
 		header("Location: ../login/login.php");
 	}
 }else{
