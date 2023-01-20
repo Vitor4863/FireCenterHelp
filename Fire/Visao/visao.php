@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous"/>
@@ -58,7 +58,7 @@ session_start();
             </div>
             <div class="sidebar-center">
                 <ul class="list">
-                   <a href="../consulta/perfil.php"><li class="list-item">
+                   <a href="../consulta/usuario.php"><li class="list-item">
                          <img src="img/man.png" alt="" width="30px">
                         <span class="list-item-text">Perfil</span>
                     </li></a>
