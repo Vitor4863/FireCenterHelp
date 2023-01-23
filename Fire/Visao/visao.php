@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous"/>
@@ -70,22 +70,40 @@ session_start();
                   
                 </ul>
             </div>
-            <button class="btn fifth">EMERGÊNCIA</button>
+            <a href="#modal_1" class="btn2">Emergêcia</a>
+               
             <div class="sidebar-bottom">
                 <div class="color-box dark"></div>
                 <div class="color-box night"></div>
                 <div class="color-box light"></div>
             </div>
         </div>
+
+         <!--pop-up-->
+            <div id="modal_1" class="modal">
+                <div class="modal__content">
+                        <h2 class="modal__title">detalhes do acidente</h2>
+                        <p class="modal__description">
+                            <form action="">
+                                <input class="DE" type="text" placeholder="Rua" required><br>
+                                <input class="DE" type="text" placeholder="Detalhes da emergencia">
+                            </form>
+                        </p>
+                    <a href="#" class="modal__link">OK</a>
+                </div>
+            </div>
+                <!--pop-up-->
         
         <div class="mapa">
+            
             <!--<h2></h2>-->
             <div id="mapid"></div>
         </div>
+        
     </div>
     
 
-
+    
     <script src="script.js"></script>
     <script>
 //let h2 = document.querySelector('h2');
@@ -119,6 +137,7 @@ var watchID = navigator.geolocation.watchPosition(success, error, {
     enableHighAccuracy: true,
     timeout: 5000
 });
+
    </script>
 </body>
 </html>
