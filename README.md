@@ -36,7 +36,8 @@
 <table border="1">
     <h2>Tecnologias utilizadas<h2>
     <tr>
-        <td>Java</td>
+        <td>PHP</td>
+        <td>PHPmailer</td>
         <td>MySQL</td>
     </tr>
     <tr>
@@ -45,11 +46,7 @@
     </tr>
     <tr>
         <td>JavaScript</td>
-        <td>Ionic</td>
-    </tr>
-     <tr>
-        <td>PHP</td>
-        <td>Angula</td>
+        <td>Geolocalização</td>
     </tr>
 </table>
  :construction: Projeto em construção :construction:
