@@ -19,8 +19,8 @@
                     <input type="usuario" placeholder="Usuario" name="usuario" required/>
                     <input type="password" placeholder="Senha" name="senha" required/>
 					<div><input type="date" name="dataNascimento" required/></div>
-					<div><input type="text" placeholder="Telefone" name="telefone" required maxlength="9"/></div>
-					<div><input type="text" placeholder="CPF"  name="cpf" required maxlength="11"/></div>
+					<div><input type="text" placeholder="Telefone" name="telefone" required maxlength="12"/></div>
+					<div><input type="text" placeholder="CPF" name="cpf" required maxlength="11"/></div>
 					<div><input type="text" placeholder="CEP" name="cep" required maxlength="8"/></div>
 					<div><input type="text" placeholder="Numero de seguranca" name="numeroSeguranca" required maxlength="9"/></div>
 					<div><input type="text" placeholder="Alergia" name="alergia"  required maxlength="90"/></div>
@@ -43,14 +43,13 @@
 					
 					</select>
 				 </div>
-			
                 <button type="submit" name="btn" value="Acessar">Enviar</button>
-                      
 			</form>
            
 		</div>
 		
 		</div>
 	</div>
+	
 </body>
 </html>

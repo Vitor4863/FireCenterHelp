@@ -66,14 +66,17 @@
            
 
             <div class="container_info">
-    
+                <form>
+
+                
 
                 <div class="nome" >
                     
                     <span><strong>Nome:</strong> </span>
                     <?php
 					echo $_SESSION['nome'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 
                 </div>
 
@@ -83,7 +86,8 @@
                     <span><strong>Usuario:</strong></span>
                     <?php 
 					echo $_SESSION['usuario'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -92,26 +96,28 @@
                     <span><strong>Email:</strong> </span>
                     <?php
 					echo $_SESSION['email'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
 
-                <div class="senha">
+               <!-- <div class="senha">
                     <span><strong>Senha:</strong></span>
                     <?php
 					echo $_SESSION['senha'];
 					?> 
-                </div>
+                </div>-->
 
-                <div class="underline"></div>
+                
 
                 <div class="data">
 
                     <span><strong>Data de nascimento:</strong> </span>
                     <?php
 					echo $_SESSION['dataNascimento'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -121,7 +127,8 @@
                     <span><strong>Telefone:</strong> </span>
                     <?php
 					echo $_SESSION['telefone'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -131,7 +138,8 @@
                     <span><strong>CPF:</strong> </span>
                     <?php
 					echo  $_SESSION['cpf'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -141,7 +149,8 @@
                     <span><strong>CEP:</strong> </span>
                     <?php
 					echo $_SESSION['cep'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -151,7 +160,8 @@
                     <span><strong>Numero de segurança:</strong> </span>
                     <?php
 					echo  $_SESSION['numeroSeguranca'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -161,7 +171,8 @@
                     <span><strong>Alergia:</strong> </span>
                     <?php
 					echo $_SESSION['alergia'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -171,7 +182,8 @@
                     <span><strong>Tipo Sanguineo:</strong> </span>
                     <?php
 					echo $_SESSION['sangue'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -180,7 +192,8 @@
                     <span><strong>PCD:</strong></span>
                     <?php 
 					echo $_SESSION['pcd'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
@@ -190,19 +203,21 @@
                     <span><strong>Deficiencia:</strong> </span>
                     <?php
 					echo $_SESSION['deficiencia'];
-					?> 
+					?> <br>
+                    <input type="text" name="" hidden>
                 </div>
 
                 <div class="underline"></div>
 
                 
 
-           
+                
             </div>
+            </form>
             
         </div>
 
-        <div class="modification">
+       <!-- <div class="modification">
             <h2>Change your datas</h2>
             <form action="ModifyUserServlet" method="post">
                 <input type="hidden" name="id" id="id" value="">
@@ -340,7 +355,7 @@
 
             </form>
             
-        </div>
+        </div>-->
 
         
 
