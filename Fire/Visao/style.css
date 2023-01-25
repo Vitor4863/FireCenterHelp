@@ -265,10 +265,10 @@
   }
  /*-----------------------------POP-UP------------------------------------------------*/
  :root {
-    --clr-pink: #EF476F;
-    --clr-green: #06D6A0;
-    --clr-green_hover: #0cc493;
-    --clr-green_active: #0daf84;
+    --clr-pink: #b80808;
+    --clr-green: #b80808;
+    --clr-green_hover: #920606;
+    --clr-green_active: #660303;
 }
 
  .btn2{
@@ -278,6 +278,10 @@
     color: #ffffff;
     justify-content: center;
     border-radius: 4px;
+}
+
+.btn2:hover{
+    background-color:#920606;
 }
 
 .modal{
