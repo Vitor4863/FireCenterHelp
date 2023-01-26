@@ -82,14 +82,17 @@ session_start();
          <!--pop-up-->
             <div id="modal_1" class="modal">
                 <div class="modal__content">
-                        <h2 class="modal__title">detalhes do acidente</h2>
+                        <h2 class="modal__title">Detalhes do Acidente</h2>
                         <p class="modal__description">
-                            <form action="">
-                                <input class="DE" type="text" placeholder="Rua" required><br>
-                                <input class="DE" type="text" placeholder="Detalhes da emergencia">
+                            <form action="../PHPMailer/envia.php" method="post"> 
+                                <input class="DE" type="text" placeholder="Rua" required name="rua"><br>
+                               
+                                <textarea class="DE" type="text" placeholder="Detalhes da emergencia" name="mensagem"></textarea>
+                                <input class="modal__link" type="submit" name="enviar" >
                             </form>
                         </p>
-                    <a href="#" class="modal__link">OK</a>
+                    <!--<a href="#" class="modal__link">OK</a> -->
+                    
                 </div>
             </div>
                 <!--pop-up-->
