@@ -8,19 +8,10 @@
 
 :root{
     /* ===== Colors ===== */
-    --body-color: white;
-    --primary-color: #03A66A;
-    --primary-color-light: #F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
-
+    --body-color: #1f1e1e;
     --font-Title: 'Poppins', sans-serif; /* TODO weight 700*/
     --font-SubTitle: 'Poppins', sans-serif; /* TODO weight 200 or 500*/
-    --color-base: #03A66A;
-    --coolor-secundary: #6156E0;
-    --color-text: #08070B;
-    --color-input: #909090;
-    --colo-text-button: #ffffff;
+
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -31,10 +22,12 @@
 
 body{
     min-height: 100vh;
-    overflow: hidden;
     background-color: var(--body-color);
     transition: var(--tran-05);
+    color:white;
+    display: flex;
 }
+
 
 ::selection{
     background-color: var(--primary-color);
@@ -52,15 +45,24 @@ body.dark{
 
 
 #main_user{
-    padding: 6rem 10rem;
     width: 93vw;
-    position: absolute;
+    
     top: 0;
     left: 13%;
-    height: 100vh;
+    height: 102vh;
     transition: var(--tran-05);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+.container_icons{
+    position: relative;
+    right: -230px;
+    
+}
+.container_icons i{
+    transform: scale(2);
+    color: #222;
+
 }
 
 .sidebar.close ~ #main_user{
@@ -68,16 +70,14 @@ body.dark{
     height: 90vh;
 }
 .modification{
-    visibility: hidden;
-    display: flex;
+    height: 750px;
+    margin: 15.5px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
-    width: 500px;
-    height: 500px;
-    background: var(--sidebar-color);
+    padding: 64px;
+    background: #252525;
     border-bottom: 10px solid #3a3b3c;
     border-radius: 6px;
     transition: var(--tran-05);
@@ -99,16 +99,11 @@ body.dark .modification{
     top: 0;
     margin-bottom: 6%;
 }
-.modification .input-data input{
-    font-family: var(--font-SubTitle);
-    font-weight: 500;
-    height: 70%;
-    width: 70%;
-    border: none;
-    font-size: 0.8rem;
-    border-bottom: 2px solid var(--color-text);
-    outline: none;
-    background: transparent;
+.underline{
+    height: 2px;
+    width: 100%;
+    border-radius: 500px;
+    background: rgb(8, 8, 8);
 }
 .input-data input:focus ~ label,
 .input-data input:valid ~ label{
@@ -129,26 +124,7 @@ body.dark .modification{
     transition: all 0.3s ease;
   
 }
-.input-data .underline{
-  position: absolute;
-  height: 2px;
-  width: 70%;
-  bottom: 11px;
-}
-.input-data .underline:before{
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: var(--color-input);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-.input-data input:focus ~ .underline:before,
-.input-data input:valid ~ .underline:before{
-  transform: scaleX(1);
-}
+
 
 .modification form{
     position: relative;
@@ -170,13 +146,12 @@ body.dark .modification{
     align-items: center;
     text-align: center;
     padding: 30px;
-    width: 500px;
-    height: 500px;
-    background: var(--sidebar-color);
+    background: #fff;
     border-bottom: 10px solid #3a3b3c;
     border-radius: 6px;
     transition: var(--tran-05);
     transform: scale(.95);
+    color: #0f0f0f;
 }
 
 .info:hover{
@@ -260,10 +235,6 @@ body.dark .btn:hover{
 body.dark .input-data input{
     color: var(--colo-text-button);
 }
-body.dark .input-data .underline{
-    color: var(--toggle-color);
-    background: var(--primary-color-light);
-}
 
 .container_info{
     margin-top: 40px;
@@ -280,17 +251,7 @@ body.dark .input-data .underline{
   margin-bottom: 6%;
 }
 
-.container_info .underline{
-  height: 2px;
-  width: 100%;
-  position: relative;
-  left: -17%;
-  background: var(--color-text);
-}
 
-body.dark .container_info .underline{
-    background: var(--primary-color-light);
-}
 
 .container_info a:nth-child(2) i{
     position: absolute;
@@ -340,8 +301,8 @@ body.dark .container_info a:nth-child(1) i:hover{
 .sidebar {
 	width: 15%;
 	height: 100vh;
-	background-color: #111827;
-	color: #9ca3af;
+	background-color: #0f0f0f;
+	color: #cfd5df;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -351,6 +312,8 @@ body.dark .container_info a:nth-child(1) i:hover{
   .tudo{
 	width: 100%;
 	height: 100%;
+    display: flex;
+    gap: 80px;
   }
   
   .sidebar-top,
@@ -359,7 +322,7 @@ body.dark .container_info a:nth-child(1) i:hover{
 	display: flex;
 	align-items: center;
 	width: 80%;
-	border-bottom: 1px solid #4b4b4b;
+	border-bottom: 1px solid rgb(158, 24, 24);
 	padding: 10px 0;
 	margin-bottom: 10px;
   }
@@ -374,7 +337,7 @@ body.dark .container_info a:nth-child(1) i:hover{
   }
   a{
 	text-decoration: none;
-	color: #9ca3af;
+	color: #cdcfd1;
 }
 .nav-list li a{
     color:#ffffff;
@@ -410,3 +373,33 @@ body.dark .container_info a:nth-child(1) i:hover{
 	background-color: #374151;
 	color: white;
   }
+
+  form{
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
+}
+
+
+
+.input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    transition: 0.5s ease-in-out;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: rgb(9, 10, 10);
+}

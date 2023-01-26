@@ -12,12 +12,13 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       
+        <link rel="shortcut icon" type="image/x-icon" href="img1/flame-outline.svg">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="user2.css">
+    <link rel="stylesheet" href="user.css">
 
     
 </head>
@@ -26,7 +27,7 @@
     <div class="tudo">
         <div class="sidebar">
            <a href="../visao/visao.php"><div class="sidebar-top">
-                <img src="img/flames.png" alt="" width="40px">
+                <img src="img1/flames.png" alt="" width="40px">
                 <span class="brand">FireHelpCenter</span><br>
                  
             </div></a>
@@ -34,7 +35,7 @@
             <div class="sidebar-center">
                 <ul class="list">
                    <a href="../consulta/usuario.php"><li class="list-item">
-                         <img src="img/man.png" alt="" width="30px">
+                         <img src="img1/man.png" alt="" width="30px">
                         <span class="list-item-text">Perfil</span>
                     </li></a>
                     
@@ -79,18 +80,20 @@
                     <?php
 					echo $_SESSION['nome'];
 					?> <br>
+                  
+                 <input placeholder="Nome"  id ="nome" type="text"  hidden name="nome" class="input">
                  
-                 <input  id ="nome" type="text" placeholder="Nomes" hidden name="nome">
                 </div>
-
                 <div class="underline"></div>
+                
+
 
                 <div class="usuario"> 
                     <span><strong>Usuario:</strong></span>
                     <?php 
 					echo $_SESSION['usuario'];
 					?> <br>
-                       <input  id ="usuario" type="text" placeholder="Usuario" hidden name="usuario">
+                       <input  id ="usuario" type="text" placeholder="Usuario" hidden name="usuario" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -101,7 +104,7 @@
 					echo $_SESSION['email'];
                     
 					?> <br>
-                   <input  id ="email" type="text" placeholder="Email" hidden name="email">
+                   <input  id ="email" type="text" placeholder="Email" hidden name="email" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -122,7 +125,7 @@
                     <?php
 					echo $_SESSION['dataNascimento'];
 					?> <br>
-                    <input  id ="data" type="date" placeholder="Data" hidden name="dataNascimento">
+                    <input  id ="data" type="date" placeholder="Data" hidden name="dataNascimento" class="input">
                     
                 </div>
 
@@ -135,7 +138,7 @@
                     <?php
 					echo $_SESSION['telefone'];
 					?> <br>
-                    <input  id="telefone" type="text" placeholder="telefone" hidden name="telefone">
+                    <input  id="telefone" type="text" placeholder="telefone" hidden name="telefone" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -146,7 +149,7 @@
                     <?php
 					echo  $_SESSION['cpf'];
 					?> <br>
-                    <input id ="cpf" type="text" placeholder="cpf" hidden name="cpf">
+                    <input id ="cpf" type="text" placeholder="CPF" hidden name="cpf" class="input">
 
                 </div>
 
@@ -158,7 +161,7 @@
                     <?php
 					echo $_SESSION['cep'];
 					?> <br>
-                    <input id="cep" type="text" placeholder="cep" hidden name="cep">
+                    <input id="cep" type="text" placeholder="CEP" hidden name="cep" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -169,7 +172,7 @@
                     <?php
 					echo  $_SESSION['numeroSeguranca'];
 					?> <br>
-                    <input id="numeroSeguranca" type="text" placeholder="Numero de Segurança" hidden name="numeroSeguranca">
+                    <input id="numeroSeguranca" type="text" placeholder="Numero de Segurança" hidden name="numeroSeguranca" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -180,7 +183,7 @@
                     <?php
 					echo $_SESSION['alergia'];
 					?> <br>
-                    <input id="alergia" type="text" placeholder="Alergia" hidden name="alergia"> 
+                    <input id="alergia" type="text" placeholder="Alergia" hidden name="alergia" class="input"> 
                 </div>
 
                 <div class="underline"></div>
@@ -192,7 +195,7 @@
 					echo $_SESSION['sangue'];
 					?> <br>
                    
-                    <div><select  name="sangue"  id="sangue"  hidden >
+                    <div><select  name="sangue"  id="sangue"  hidden  class="input">
 						<option placeholder="Selecione seu tipo de sanguinio">Tipo de sanguinio</option>
 						<option>A+</option>
 						<option>A-</option>
@@ -213,7 +216,7 @@
 					echo $_SESSION['pcd'];
 					?> <br>
                     
-                    <select  name="pcd"  id="pcd"  hidden>
+                    <select  name="pcd"  id="pcd"  hidden class="input">
 						<option >PCD</option>
 						<option>Sim</option>
 						<option>Não</option>
@@ -229,7 +232,8 @@
                     <?php
 					echo $_SESSION['deficiencia'];
 					?> <br>
-                    <input id="deficiencia" type="text" placeholder="Deficiencia" hidden name="deficiencia">
+                    
+                    <input id="deficiencia" type="text" placeholder="Deficiencia" hidden name="deficiencia" class="input">
 
                 </div>
 

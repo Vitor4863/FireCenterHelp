@@ -90,7 +90,7 @@ session_start();
 					?> "> <br> 
                                 <input class="DE" type="text" placeholder="Rua" required name="rua"><br>
                                
-                                <textarea class="DE" type="text" placeholder="Detalhes da emergencia" name="mensagem"></textarea>
+                                <textarea class="DE" type="text" placeholder="Detalhes da emergencia" name="mensagem"></textarea><br>
                                 <input class="modal__link" type="submit" name="enviar" >
                             </form>
                         </p>
