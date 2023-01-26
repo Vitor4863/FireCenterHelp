@@ -23,18 +23,23 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'firecenterhelp@gmail.com';                     //SMTP username
-    $mail->Password   = 'yslvvxmuaaepmifm';                               //SMTP password
+    $mail->Username   = 'helpcenterfire@gmail.com
+    ';                     //SMTP username
+    $mail->Password   = 'ssdvjekslmacqaql';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('firecenterhelp@gmail.com', 'FireCenterHelp');
-    $mail->addAddress('firecenterhelp@gmail.com', 'FireCenterHelp');     //Add a recipient
+    $mail->setFrom('helpcenterfire@gmail.com
+    ', 'FireCenterHelp');
+    $mail->addAddress('helpcenterfire@gmail.com
+    ', 'helpcenterfire@gmail.com
+    ');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
-    $mail->addReplyTo('firecenterhelp@gmail.com', 'Information');
-    $mail->addCC('firecenterhelp@gmail.com');
-    $mail->addBCC('firecenterhelp@gmail.com');
+    $mail->addReplyTo('helpcenterfire@gmail.com
+    ', 'Information');
+    $mail->addCC('helpcenterfire@gmail.com');
+    $mail->addBCC('helpcenterfire@gmail.com');
     
      
     //Attachments

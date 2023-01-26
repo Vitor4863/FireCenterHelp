@@ -104,7 +104,7 @@
 					echo $_SESSION['email'];
                     
 					?> <br>
-                   <input  id ="email" type="text" placeholder="Email" hidden name="email" class="input">
+                   <input  id ="email" type="email" placeholder="Email" hidden name="email" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -138,7 +138,7 @@
                     <?php
 					echo $_SESSION['telefone'];
 					?> <br>
-                    <input  id="telefone" type="text" placeholder="telefone" hidden name="telefone" class="input">
+                    <input  id="telefone" type="telefone" placeholder="telefone" hidden name="telefone" class="input">
                 </div>
 
                 <div class="underline"></div>
