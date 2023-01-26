@@ -57,27 +57,30 @@
     <section id="main_user">
       
         <div class="info">
+            
+            <div class="container_info">
             <div class="container_icons">
-                    <a href="" id="edit"><i class='bx bx-edit icon '></i></a>
+                 <!---   <a href="" id="edit"><i class='bx bx-edit icon '></i></a> -->
+
+                    <button id="action-btn"><i class='bx bx-edit icon '></i></button>
+                 
                
                 </div>
-            <h2>Perfil</h2>
-
-           
-
-            <div class="container_info">
-                <form>
-
+                <form action="../dao/ed_perfil.php" method="Post">
+                <h2>Perfil</h2>
                 
-
+                  
+                <input  name="id" hidden="true" value="<?php
+					echo $_SESSION['id'];
+					?> ">
                 <div class="nome" >
                     
                     <span><strong>Nome:</strong> </span>
                     <?php
 					echo $_SESSION['nome'];
 					?> <br>
-                    <input type="text" name="" hidden>
-                
+                 
+                 <input  id ="nome" type="text" placeholder="Nomes" hidden name="nome">
                 </div>
 
                 <div class="underline"></div>
@@ -87,7 +90,7 @@
                     <?php 
 					echo $_SESSION['usuario'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                       <input  id ="usuario" type="text" placeholder="Usuario" hidden name="usuario">
                 </div>
 
                 <div class="underline"></div>
@@ -96,29 +99,33 @@
                     <span><strong>Email:</strong> </span>
                     <?php
 					echo $_SESSION['email'];
+                    
 					?> <br>
-                    <input type="text" name="" hidden>
+                   <input  id ="email" type="text" placeholder="Email" hidden name="email">
                 </div>
 
                 <div class="underline"></div>
 
-               <!-- <div class="senha">
+               <!--<div class="senha">
                     <span><strong>Senha:</strong></span>
                     <?php
 					echo $_SESSION['senha'];
 					?> 
-                </div>-->
+                     <input id="senha" type="password" placeholder="senha"  hidden name="senha">
+                </div> -->
 
                 
 
                 <div class="data">
 
-                    <span><strong>Data de nascimento:</strong> </span>
+                    <span><strong>Data de nascimento:</strong> </span> 
                     <?php
 					echo $_SESSION['dataNascimento'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input  id ="data" type="date" placeholder="Data" hidden name="dataNascimento">
+                    
                 </div>
+
 
                 <div class="underline"></div>
 
@@ -128,7 +135,7 @@
                     <?php
 					echo $_SESSION['telefone'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input  id="telefone" type="text" placeholder="telefone" hidden name="telefone">
                 </div>
 
                 <div class="underline"></div>
@@ -139,7 +146,8 @@
                     <?php
 					echo  $_SESSION['cpf'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input id ="cpf" type="text" placeholder="cpf" hidden name="cpf">
+
                 </div>
 
                 <div class="underline"></div>
@@ -150,7 +158,7 @@
                     <?php
 					echo $_SESSION['cep'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input id="cep" type="text" placeholder="cep" hidden name="cep">
                 </div>
 
                 <div class="underline"></div>
@@ -161,7 +169,7 @@
                     <?php
 					echo  $_SESSION['numeroSeguranca'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input id="numeroSeguranca" type="text" placeholder="Numero de Segurança" hidden name="numeroSeguranca">
                 </div>
 
                 <div class="underline"></div>
@@ -172,7 +180,7 @@
                     <?php
 					echo $_SESSION['alergia'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input id="alergia" type="text" placeholder="Alergia" hidden name="alergia"> 
                 </div>
 
                 <div class="underline"></div>
@@ -183,7 +191,18 @@
                     <?php
 					echo $_SESSION['sangue'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                   
+                    <div><select  name="sangue"  id="sangue"  hidden >
+						<option placeholder="Selecione seu tipo de sanguinio">Tipo de sanguinio</option>
+						<option>A+</option>
+						<option>A-</option>
+						<option>B+</option>
+						<option>B-</option>
+						<option>O+</option>
+						<option>O-</option>
+						<option>AB+</option>
+						<option>AB-</option>
+					</select>
                 </div>
 
                 <div class="underline"></div>
@@ -193,7 +212,13 @@
                     <?php 
 					echo $_SESSION['pcd'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    
+                    <select  name="pcd"  id="pcd"  hidden>
+						<option >PCD</option>
+						<option>Sim</option>
+						<option>Não</option>
+					
+					</select>
                 </div>
 
                 <div class="underline"></div>
@@ -204,14 +229,15 @@
                     <?php
 					echo $_SESSION['deficiencia'];
 					?> <br>
-                    <input type="text" name="" hidden>
+                    <input id="deficiencia" type="text" placeholder="Deficiencia" hidden name="deficiencia">
+
                 </div>
 
                 <div class="underline"></div>
 
                 
 
-                
+                <button class="btn">Modificar</button>
             </div>
             </form>
             
@@ -361,7 +387,7 @@
 
     </section>
 
-
+    <script src="custum.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
