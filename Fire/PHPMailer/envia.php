@@ -44,10 +44,9 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'FireCenterHelp';
-    $mail->Body  = $_POST['mensagem'];
-    $mail->Body  = $_POST['rua'];
-    //$mail->AltBody = $_POST['rua'];
+    $mail->Body  = $_POST['nome']."<br>"."<h3>Endereço:</h3>".$_POST['rua']." <br> "."<h3>Emergencia:</h3>".$_POST['mensagem'];
     $mail->send();
+    
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

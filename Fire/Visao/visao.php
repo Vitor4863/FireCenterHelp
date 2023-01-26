@@ -84,7 +84,10 @@ session_start();
                 <div class="modal__content">
                         <h2 class="modal__title">Detalhes do Acidente</h2>
                         <p class="modal__description">
-                            <form action="../PHPMailer/envia.php" method="post"> 
+                            <form action="../PHPMailer/envia.php" method="post">
+                            <input class="DE" type="text" placeholder="nome" required name="nome" hidden value="<?php
+					echo $_SESSION['nome'];
+					?> "> <br> 
                                 <input class="DE" type="text" placeholder="Rua" required name="rua"><br>
                                
                                 <textarea class="DE" type="text" placeholder="Detalhes da emergencia" name="mensagem"></textarea>
