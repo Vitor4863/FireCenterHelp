@@ -23,23 +23,29 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'helpcenterfire@gmail.com
+    $mail->Username   = 'firehelpcenter@gmail.com
+
     ';                     //SMTP username
-    $mail->Password   = 'ssdvjekslmacqaql';                               //SMTP password
+    $mail->Password   = 'jjkxhtdkbifftvka';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('helpcenterfire@gmail.com
-    ', 'FireCenterHelp');
-    $mail->addAddress('helpcenterfire@gmail.com
-    ', 'helpcenterfire@gmail.com
+    $mail->setFrom('firehelpcenter@gmail.com
+
+    ', 'firehelpcenter@gmail.com
+    ');
+    $mail->addAddress('firehelpcenter@gmail.com
+
+    ', 'firehelpcenter@gmail.com
     ');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
-    $mail->addReplyTo('helpcenterfire@gmail.com
+    $mail->addReplyTo('firehelpcenter@gmail.com
     ', 'Information');
-    $mail->addCC('helpcenterfire@gmail.com');
-    $mail->addBCC('helpcenterfire@gmail.com');
+    $mail->addCC('firehelpcenter@gmail.com
+    ');
+    $mail->addBCC('firehelpcenter@gmail.com
+    ');
     
      
     //Attachments
@@ -57,4 +63,3 @@ try {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
-echo "<script> location.href='../visao/visao.php';</script>";
