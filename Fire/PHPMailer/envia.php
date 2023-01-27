@@ -23,28 +23,28 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'firehelpcenter@gmail.com
+    $mail->Username   = '
 
     ';                     //SMTP username
-    $mail->Password   = 'jjkxhtdkbifftvka';                               //SMTP password
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('firehelpcenter@gmail.com
+    $mail->setFrom('
 
-    ', 'firehelpcenter@gmail.com
+    ', '
     ');
-    $mail->addAddress('firehelpcenter@gmail.com
+    $mail->addAddress('
 
-    ', 'firehelpcenter@gmail.com
+    ', '
     ');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
-    $mail->addReplyTo('firehelpcenter@gmail.com
+    $mail->addReplyTo('
     ', 'Information');
-    $mail->addCC('firehelpcenter@gmail.com
+    $mail->addCC('
     ');
-    $mail->addBCC('firehelpcenter@gmail.com
+    $mail->addBCC('
     ');
     
      
@@ -54,7 +54,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'FireCenterHelp';
+    $mail->Subject = '';
     $mail->Body  = $_POST['nome']."<br>"."<h3>Endereço:</h3>".$_POST['rua']." <br> "."<h3>Emergencia:</h3>".$_POST['mensagem'];
     $mail->send();
     
