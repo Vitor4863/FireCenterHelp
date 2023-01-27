@@ -309,6 +309,7 @@
     padding:  2rem 2rem 1rem;
     border-radius: 4px;
     border-top: .5rem solid var(--clr-green);
+	
 }
 
 .modal__title{
@@ -324,6 +325,7 @@
     padding: 0.7rem 3rem;
     margin-top: 1rem;
     border-radius: 4px;
+	border: none;
 }
 
 .modal__link:hover{
@@ -333,6 +335,17 @@
 .modal__link:active{
     background-color: var(--clr-green_active);
 }
+
+.DE{
+	padding: 10px 50px;
+	outline: none;
+	margin-top:5px;
+	
+}
+
+
+
+
 
 
 
