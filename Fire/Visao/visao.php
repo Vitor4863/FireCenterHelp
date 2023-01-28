@@ -62,7 +62,7 @@ session_start();
                     </li></a>
                     
                     <li class="list-item">
-                       <i class="list-item-icon fas fa-book"></i>
+                       <i class="list-item-icon fas fa-book" color="white"></i>
                         <a href="../visao/sobre.php"><span class="list-item-text">Sobre</span></a>
                     </li>
                   

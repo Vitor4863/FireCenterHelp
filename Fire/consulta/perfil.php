@@ -27,7 +27,7 @@ include_once "../dao/conexao.php";
             <div class="sidebar-center">
                 <ul class="list">
                    <!-- <a href="../consulta/perfil.php"><li class="list-item"> -->
-                         <img src="img/man.png" alt="" width="30px">
+                        <img src="img3/man.png" alt="" width="30px">
                         <span class="list-item-text">Perfil</span>
                     </li></a>
                     

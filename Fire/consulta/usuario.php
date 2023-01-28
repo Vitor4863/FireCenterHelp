@@ -12,13 +12,13 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="shortcut icon" type="image/x-icon" href="img1/flame-outline.svg">
+        <link rel="shortcut icon" type="image/x-icon" href="img3/flame-outline.svg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="user3.css">
 
     
 </head>
@@ -27,7 +27,7 @@
     <div class="tudo">
         <div class="sidebar">
            <a href="../visao/visao.php"><div class="sidebar-top">
-                <img src="img1/flames.png" alt="" width="40px">
+                <img src="img3/flames.png" alt="" width="40px">
                 <span class="brand">FireHelpCenter</span><br>
                  
             </div></a>
@@ -35,7 +35,7 @@
             <div class="sidebar-center">
                 <ul class="list">
                    <a href="../consulta/usuario.php"><li class="list-item">
-                         <img src="img1/man.png" alt="" width="30px">
+                         <img src="img3/man.png" alt="" width="30px">
                         <span class="list-item-text">Perfil</span>
                     </li></a>
                     

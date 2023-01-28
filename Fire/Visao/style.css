@@ -317,7 +317,7 @@
     margin-bottom: 1rem;
 }
 
-.modal__link{
+.modal__link{ 
     display: inline-flex;
     justify-content: center;
     align-items: center;

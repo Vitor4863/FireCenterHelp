@@ -45,14 +45,14 @@ body.dark{
 
 
 #main_user{
-    width: 93vw;
-    
+    width: 94vw;
     top: 0;
     left: 13%;
-    height: 102vh;
+    height: 100vh;
     transition: var(--tran-05);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 .container_icons{
     position: relative;
@@ -152,11 +152,12 @@ body.dark .modification{
     transition: var(--tran-05);
     transform: scale(.95);
     color: #0f0f0f;
+    width: 150%;
+    margin-left: 47.5%;
+   
 }
 
-.info:hover{
-    transform: scale(1);
-}
+
 
 body.dark .info{
     color: var(--colo-text-button);
@@ -307,6 +308,7 @@ body.dark .container_info a:nth-child(1) i:hover{
 	flex-direction: column;
 	align-items: center;
 	float: left;
+    position: fixed;
   }
 
   .tudo{
