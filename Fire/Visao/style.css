@@ -299,8 +299,9 @@
 .modal:target{
     opacity: 1;
     visibility: visible;
-	position: relative;
-	z-index: 10;
+	position: absolute;
+	z-index:1400;
+	
 }
 
 .modal__content{

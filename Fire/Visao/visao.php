@@ -14,14 +14,10 @@ session_start();
         crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
+        
     <link rel="shortcut icon" type="image/x-icon" href="img/flame-outline.svg">
-     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     <title>FireHelpCenter</title>
     <style>#mapid { 
 		height: 100%;
@@ -31,6 +27,8 @@ session_start();
 
 
 </head>
+
+
 <body>
 
 
@@ -90,20 +88,26 @@ session_start();
 					?> "> <br> 
                                 <input class="DE" type="text" placeholder="Rua" required name="rua"><br>
                                
-                                <textarea class="DE" type="text" placeholder="Detalhes" name="mensagem"></textarea><br>
+                                <textarea class="DE" type="text" placeholder="Detalhes da emergencia" name="mensagem"></textarea><br>
                                 <input class="modal__link" type="submit" name="enviar" >
+                                <a href="visao.php" class="modal__link">Voltar</a> 
                             </form>
                         </p>
-                    <!--<a href="#" class="modal__link">OK</a> -->
+                    
                     
                 </div>
+                
             </div>
+            <div id="map" class="mapa"></div>
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+           
                 <!--pop-up-->
         
-        <div class="mapa">
+        <!--<div class="mapa">-->
             
             <!--<h2></h2>-->
-            <div id="mapid"></div>
+            <!--<div id="mapid"></div>-->
         </div>
         
     </div>
@@ -111,38 +115,113 @@ session_start();
 
     
     <script src="script.js"></script>
+    
     <script>
 //let h2 = document.querySelector('h2');
-var map;
+ //var map;
 
-function success(pos){
-    console.log(pos.coords.latitude, pos.coords.longitude);
+//function success(pos){
+  //  console.log(pos.coords.latitude, pos.coords.longitude);
     //h2.textContent = `Latitude:${pos.coords.latitude}, Longitude:${pos.coords.longitude}`;
 
-    if (map === undefined) {
-        map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 13);
+    //if (map === undefined) {
+      //  map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 13);
+    //} else {
+      //  map.remove();
+        //map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 13);
+   // }
+
+   // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+     //   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    //}).addTo(map);
+
+    //L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
+       // .bindPopup('Eu estou aqui!')
+        //.openPopup();
+//}
+
+//function error(err){
+    //console.log(err);
+//}
+
+//var watchID = navigator.geolocation.watchPosition(success, error, {
+   // enableHighAccuracy: true,
+    //timeout: 5000
+//});
+
+
+var map = L.map('map').setView([-22.897003892194146, -43.122873140890285], 16);
+		mapLink = "<a href='http://openstreetmap.org'>OpenStreetMap</a>";
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: 'Leaflet &copy; ' + mapLink + ', contribution', maxZoom: 18 }).addTo(map);
+
+		var taxiIcon = L.icon({
+			iconUrl: 'img/bombeiro.png',
+			iconSize: [50, 50]
+		})
+        
+
+		var marker = L.marker([-22.897003892194146, -43.122873140890285], { icon: taxiIcon }).addTo(map);
+        var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    osm.addTo(map);
+
+    if(!navigator.geolocation) {
+        console.log("Your browser doesn't support geolocation feature!")
     } else {
-        map.remove();
-        map = L.map('mapid').setView([pos.coords.latitude, pos.coords.longitude], 13);
+        setInterval(() => {
+            navigator.geolocation.getCurrentPosition(getPosition)
+        }, 5000);
     }
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    var local, circle;
 
-    L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
-        .bindPopup('Eu estou aqui!')
-        .openPopup();
-}
+    function getPosition(position){
+        // console.log(position)
+        var lat = position.coords.latitude
+        var long = position.coords.longitude
+        var accuracy = position.coords.accuracy
 
-function error(err){
-    console.log(err);
-}
+        if(local) {
+            map.removeLayer(local)
+        }
 
-var watchID = navigator.geolocation.watchPosition(success, error, {
-    enableHighAccuracy: true,
-    timeout: 5000
-});
+        if(circle) {
+            map.removeLayer(circle)
+        }
+
+        local = L.marker([lat, long])
+        circle = L.circle([lat, long], {radius: accuracy})
+
+        var featureGroup = L.featureGroup([local, circle]).addTo(map)
+
+        map.fitBounds(featureGroup.getBounds())
+
+        console.log("Your coordinate is: Lat: "+ lat +" Long: "+ long+ " Accuracy: "+ accuracy)
+
+        map.on('click', function (e) {
+			console.log(e)
+			var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+			L.Routing.control({
+				waypoints: [
+					L.latLng(-22.897003892194146, -43.122873140890285),
+					L.latLng(e.latlng.lat, e.latlng.lng)
+				]
+			}).on('routesfound', function (e) {
+				var routes = e.routes;
+				console.log(routes);
+
+				e.routes[0].coordinates.forEach(function (coord, index) {
+					setTimeout(function () {
+						marker.setLatLng([coord.lat, coord.lng]);
+					}, 950 * index)
+				})
+
+			}).addTo(map);
+		});
+        
+    }
+
 
    </script>
 </body>
