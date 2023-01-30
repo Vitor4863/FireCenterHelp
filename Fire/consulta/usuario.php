@@ -18,7 +18,7 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="user3.css">
+    <link rel="stylesheet" href="user4.css">
 
     
 </head>
@@ -138,7 +138,7 @@
                     <?php
 					echo $_SESSION['telefone'];
 					?> <br>
-                    <input  id="telefone" type="telefone" onkeydown="return mascaraTelefone(event)"  maxlength="12" placeholder="telefone" hidden name="telefone" class="input">
+                    <input  id="telefone" type="telefone" onkeydown="return mascaraTelefone(event)"  maxlength="12" placeholder="Telefone" hidden name="telefone" class="input">
                 </div>
 
                 <div class="underline"></div>
@@ -251,9 +251,7 @@
             <h2>Change your datas</h2>
             <form action="ModifyUserServlet" method="post">
                 <input type="hidden" name="id" id="id" value="">
-
                 <div class="input-data">
-
                 <div class="nome" >
                     
                     <span><strong>Nome:</strong> </span>
@@ -262,127 +260,92 @@
 					?> 
                 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="usuario"> 
                     <span><strong>Usuario:</strong></span>
                     <?php 
 					echo $_SESSION['usuario'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="email">
                     <span><strong>Email:</strong> </span>
                     <?php
 					echo $_SESSION['email'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="senha">
                     <span><strong>Senha:</strong></span>
                     <?php
 					echo $_SESSION['senha'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="data">
-
                     <span><strong>Data de nascimento:</strong> </span>
                     <?php
 					echo $_SESSION['dataNascimento'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="telefone">
-
                     <span><strong>Telefone:</strong> </span>
                     <?php
 					echo $_SESSION['telefone'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="cpf">
-
                     <span><strong>CPF:</strong> </span>
                     <?php
 					echo  $_SESSION['cpf'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                  <div class="cep">
-
                     <span><strong>CEP:</strong> </span>
                     <?php
 					echo $_SESSION['cep'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="nSegu">
-
                     <span><strong>Numero de segurança:</strong> </span>
                     <?php
 					echo  $_SESSION['numeroSeguranca'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="alergia">
-
                     <span><strong>Alergia:</strong> </span>
                     <?php
 					echo $_SESSION['alergia'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="tipoS">
-
                     <span><strong>Tipo Sanguineo:</strong> </span>
                     <?php
 					echo $_SESSION['sangue'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="pcd"> 
                     <span><strong>PCD:</strong></span>
                     <?php 
 					echo $_SESSION['pcd'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <div class="defi">
-
                     <span><strong>Deficiencia:</strong> </span>
                     <?php
 					echo $_SESSION['deficiencia'];
 					?> 
                 </div>
-
                 <div class="underline"></div>
-
                 <button class="btn">Modificar</button>
-
             </form>
             
         </div>-->

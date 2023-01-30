@@ -8,14 +8,14 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
         
-    <link rel="shortcut icon" type="image/x-icon" href="img/flame-outline.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="img1/flame-outline.svg">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     <title>FireHelpCenter</title>
@@ -36,8 +36,8 @@ session_start();
     <div class="tudo">
         <div class="sidebar">
             <div class="sidebar-top">
-                <img src="img/flames.png" alt="" width="40px">
-                <span class="brand">FireHelpCenter</span><br>
+                <img src="img1/flames.png" alt="" width="40px">
+              <span>FireCenterHelp</span>
                  
             </div>
             <div class="sidebar-top">
@@ -57,14 +57,12 @@ session_start();
             <div class="sidebar-center">
                 <ul class="list">
                    <a href="../consulta/usuario.php"><li class="list-item">
-                         <img src="img/man.png" alt="" width="30px">
-                        <span class="list-item-text">Perfil</span>
+                         <img src="img1/man.png" alt="" width="30px"><h4 class="perfil"> Perfil</h4>
+                      
+                       
                     </li></a>
                     
-                    <li class="list-item">
-                       <i class="list-item-icon fas fa-book" color="white"></i>
-                        <a href="../visao/sobre.php"><span class="list-item-text">Sobre</span></a>
-                    </li>
+                    
                   
                 </ul>
             </div>
@@ -90,7 +88,7 @@ session_start();
                                
                                 <textarea class="DE" type="text" placeholder="Detalhes da emergencia" name="mensagem"></textarea><br>
                                 <input class="modal__link" type="submit" name="enviar" >
-                                <a href="visao.php" class="modal__link">Voltar</a> 
+                                <a href="visao.php" class="modal__link2">Voltar</a> 
                             </form>
                         </p>
                     
@@ -155,7 +153,7 @@ var map = L.map('map').setView([-22.897003892194146, -43.122873140890285], 16);
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: 'Leaflet &copy; ' + mapLink + ', contribution', maxZoom: 18 }).addTo(map);
 
 		var taxiIcon = L.icon({
-			iconUrl: 'img/bombeiro.png',
+			iconUrl: 'img1/bombeiro.png',
 			iconSize: [50, 50]
 		})
         
