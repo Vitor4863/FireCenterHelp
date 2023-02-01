@@ -1,8 +1,8 @@
 
 <h1 align="center">FireCenterHelp </h1>
-<img src="img/Capturar13.PNG" width="100%">
+<img src="img/login.PNG" width="100%">
 <br>
-<img src="img/Capturar40.PNG" width="100%">
+<img src="img/mapa.PNG" width="100%">
 
 <table border="1">
 <br>
